@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ghana</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Discover Ghana</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/ghana-large.webp">
+
+                <img
+                    src="images/ghanaview (1).jpg"
+                    alt="Beautiful view of Ghana">
+            </picture>
+        </section>
+
+        <section class="content">
+
+            <section class="card">
+                <h2>Data</h2>
+
+                <p><strong>Country:</strong> Ghana</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Population:</strong> 33 Million</p>
+                <p><strong>Language:</strong> English</p>
+                <p><strong>Currency:</strong> Ghana Cedi</p>
+            </section>
+
+            <section class="card weather">
+                <h2>Weather</h2>
+
+                <img
+                    src="images/weather3.jpg"
+                    alt="Weather Icon"
+                    class="weather-icon">
+
+                <p><strong>Temperature:</strong> <span id="temp">28</span>°C</p>
+
+                <p><strong>Wind Speed:</strong> <span id="speed">12</span> km/h</p>
+
+                <p><strong>Wind Chill:</strong>
+                    <span id="windchill"></span>
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy;
+            <span id="year"></span>
+            | Ghana Project
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
