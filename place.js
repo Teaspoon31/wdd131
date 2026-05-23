@@ -10,10 +10,12 @@ document.getElementById("lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
 
+
 // STATIC WEATHER VALUES
 
 const temperature = 28;
 const windSpeed = 12;
+
 
 
 // WIND CHILL FUNCTION
@@ -29,15 +31,18 @@ function calculateWindChill(temp, speed) {
 }
 
 
+
 // DISPLAY WIND CHILL
 
 let windChill = "N/A";
+
 
 if (temperature <= 10 && windSpeed > 4.8) {
 
     windChill =
         `${calculateWindChill(temperature, windSpeed)} °C`;
 }
+
 
 document.getElementById("windchill").textContent =
     windChill;

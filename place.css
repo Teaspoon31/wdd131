@@ -37,14 +37,14 @@ header h1 {
     font-size: 2rem;
 }
 
-/* HERO IMAGE */
+/* HERO */
 
 .hero img {
     width: 100%;
     display: block;
 }
 
-/* MAIN CONTENT */
+/* CONTENT */
 
 .content {
     display: grid;
@@ -53,7 +53,7 @@ header h1 {
     padding: 1.5rem;
 }
 
-/* CARDS */
+/* CARD */
 
 .card {
     background-color: var(--card-color);
@@ -113,7 +113,7 @@ footer {
         content: " ⛅";
     }
 
-    /* HIDE SVG ON LARGE SCREEN */
+    /* HIDE SVG ICON */
 
     .weather-icon {
         display: none;
