@@ -2,9 +2,12 @@
     --primary-color: #ce1126;
     --secondary-color: #fcd116;
     --accent-color: #006b3f;
+    --dark-color: #111111;
     --light-color: #ffffff;
-    --dark-color: #222222;
+    --card-color: #f4f4f4;
 }
+
+/* RESET */
 
 * {
     margin: 0;
@@ -12,71 +15,105 @@
     box-sizing: border-box;
 }
 
+/* BODY */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--light-color);
     color: var(--dark-color);
     line-height: 1.6;
 }
 
+/* HEADER */
+
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--light-color);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 header h1 {
     font-size: 2rem;
 }
 
+/* HERO IMAGE */
+
 .hero img {
     width: 100%;
     display: block;
 }
 
+/* MAIN CONTENT */
+
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
 }
 
+/* CARDS */
+
 .card {
-    background-color: #f4f4f4;
-    padding: 1.5rem;
-    border-radius: 10px;
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
 }
 
 .card h2 {
-    margin-bottom: 1rem;
     color: var(--accent-color);
+    margin-bottom: 1rem;
 }
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+/* WEATHER ICON */
 
 .weather-icon {
     width: 60px;
     margin-bottom: 1rem;
 }
 
+/* FOOTER */
+
 footer {
     background-color: var(--dark-color);
-    color: white;
+    color: var(--light-color);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 1rem;
 }
 
-/* Large Screen Layout */
+/* LARGE SCREEN */
 
 @media screen and (min-width: 768px) {
 
     .content {
         grid-template-columns: 1fr 1fr;
+
+        max-width: 1200px;
+
+        margin: 0 auto;
     }
+
+    /* WEATHER EMOTICON */
 
     .weather h2::after {
         content: " ⛅";
     }
+
+    /* HIDE SVG ON LARGE SCREEN */
 
     .weather-icon {
         display: none;

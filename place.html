@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore Ghana, its culture, landmarks, and weather information.">
+
+    <meta
+        name="author"
+        content="Your Name">
+
     <title>Discover Ghana</title>
 
     <link rel="stylesheet" href="styles/place.css">
@@ -18,59 +30,86 @@
 
     <main>
 
+        <!-- HERO IMAGE -->
         <section class="hero">
+
             <picture>
+
                 <source
                     media="(min-width: 768px)"
-                    srcset="images/ghana-large.webp">
+                    srcset="images/ghana4.jpg">
+
+                <source
+                    media="(max-width: 767px)"
+                    srcset="images/ghana5.jpg">
 
                 <img
-                    src="images/ghanaview (1).jpg"
+                    src="images/ghana6.jpg"
                     alt="Beautiful view of Ghana">
+
             </picture>
+
         </section>
 
-        <section class="content">
+        <!-- CONTENT -->
+        <div class="content">
 
+            <!-- DATA CARD -->
             <section class="card">
+
                 <h2>Data</h2>
 
                 <p><strong>Country:</strong> Ghana</p>
                 <p><strong>Capital:</strong> Accra</p>
                 <p><strong>Population:</strong> 33 Million</p>
-                <p><strong>Language:</strong> English</p>
+                <p><strong>Languages:</strong> English</p>
                 <p><strong>Currency:</strong> Ghana Cedi</p>
+                <p><strong>Time Zone:</strong> GMT</p>
+
             </section>
 
+            <!-- WEATHER CARD -->
             <section class="card weather">
+
                 <h2>Weather</h2>
 
+                <!-- SVG ICON FOR MOBILE -->
                 <img
-                    src="images/weather3.jpg"
-                    alt="Weather Icon"
+                    src="images/weathersvg.png"
+                    alt="Weather icon"
                     class="weather-icon">
 
-                <p><strong>Temperature:</strong> <span id="temp">28</span>°C</p>
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">28</span>°C
+                </p>
 
-                <p><strong>Wind Speed:</strong> <span id="speed">12</span> km/h</p>
+                <p>
+                    <strong>Wind Speed:</strong>
+                    <span id="windspeed">12</span> km/h
+                </p>
 
-                <p><strong>Wind Chill:</strong>
+                <p>
+                    <strong>Wind Chill:</strong>
                     <span id="windchill"></span>
                 </p>
+
             </section>
 
-        </section>
+        </div>
 
     </main>
 
     <footer>
+
         <p>
             &copy;
             <span id="year"></span>
-            | Ghana Project
+            | Discover Ghana
         </p>
 
         <p id="lastModified"></p>
+
     </footer>
 
 </body>
