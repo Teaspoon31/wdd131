@@ -1,12 +1,23 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form">
+
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="css/form.css">
+
+    <meta name="description"
+        content="Submit a product review by selecting a product, rating it, identifying useful features, and providing optional feedback.">
+
+    <meta name="author" content="Joe Boat">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
 
 <header>
@@ -16,55 +27,40 @@
 <main>
     <form method="get" action="review.html">
 
-        <!-- Product Name -->
         <div class="form-group">
             <label for="productName">
-                Product Name <span class="required">*</span>
+                Product Name *
             </label>
 
             <select id="productName" name="productName" required>
-                <option value="" selected disabled>
+                <option value="" disabled selected>
                     Select a Product ...
                 </option>
             </select>
         </div>
 
-        <!-- Rating -->
-        <fieldset class="form-group">
-            <legend>
-                Overall Rating <span class="required">*</span>
-            </legend>
+        <fieldset>
+            <legend>Overall Rating *</legend>
 
-            <label>
-                <input type="radio" name="rating" value="1" required>
-                ☆
-            </label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1">☆</label>
 
-            <label>
-                <input type="radio" name="rating" value="2">
-                ☆☆
-            </label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+            <label for="rating2">☆☆</label>
 
-            <label>
-                <input type="radio" name="rating" value="3">
-                ☆☆☆
-            </label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+            <label for="rating3">☆☆☆</label>
 
-            <label>
-                <input type="radio" name="rating" value="4">
-                ☆☆☆☆
-            </label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+            <label for="rating4">☆☆☆☆</label>
 
-            <label>
-                <input type="radio" name="rating" value="5">
-                ☆☆☆☆☆
-            </label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+            <label for="rating5">☆☆☆☆☆</label>
         </fieldset>
 
-        <!-- Installation Date -->
         <div class="form-group">
             <label for="installDate">
-                Date of Installation <span class="required">*</span>
+                Date of Installation *
             </label>
 
             <input
@@ -74,44 +70,22 @@
                 required>
         </div>
 
-        <!-- Features -->
-        <fieldset class="form-group">
+        <fieldset>
             <legend>Useful Features</legend>
 
-            <label>
-                <input type="checkbox"
-                    id="durability"
-                    name="features"
-                    value="Durability">
-                Durability
-            </label>
+            <input type="checkbox" id="durability" name="features" value="Durability">
+            <label for="durability">Durability</label><br>
 
-            <label>
-                <input type="checkbox"
-                    id="performance"
-                    name="features"
-                    value="Performance">
-                Performance
-            </label>
+            <input type="checkbox" id="performance" name="features" value="Performance">
+            <label for="performance">Performance</label><br>
 
-            <label>
-                <input type="checkbox"
-                    id="design"
-                    name="features"
-                    value="Design">
-                Design
-            </label>
+            <input type="checkbox" id="design" name="features" value="Design">
+            <label for="design">Design</label><br>
 
-            <label>
-                <input type="checkbox"
-                    id="easeOfUse"
-                    name="features"
-                    value="Ease of Use">
-                Ease of Use
-            </label>
+            <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+            <label for="easeOfUse">Ease of Use</label>
         </fieldset>
 
-        <!-- Review -->
         <div class="form-group">
             <label for="review">
                 Written Review
@@ -123,7 +97,6 @@
                 rows="5"></textarea>
         </div>
 
-        <!-- User Name -->
         <div class="form-group">
             <label for="username">
                 User Name
@@ -135,7 +108,6 @@
                 name="username">
         </div>
 
-        <!-- Submit -->
         <div class="form-group">
             <input type="submit" value="Submit Review">
         </div>
@@ -144,16 +116,10 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 | Joe Boat | Ghana</p>
+    <p>&copy; 2026 | Joe Boat | WDD 131</p>
     <p id="lastModified"></p>
 </footer>
 
-<script src="js/products.js"></script>
-
-<script>
-document.getElementById("lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
-</script>
-
 </body>
 </html>
+```
