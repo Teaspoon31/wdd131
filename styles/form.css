@@ -1,6 +1,7 @@
 /* ================================================
    ReviewHub — W05 Product Review Form
    Aesthetic: Editorial / Ink & Cream / Refined
+   Author: Boat Joe
    ================================================ */
 
 /* --- Variables --- */
@@ -11,25 +12,30 @@
   --cream-dark: #ede6d8;
   --gold:       #c8922a;
   --gold-light: #e8b84b;
-  --gold-pale:  #f5e4c0;
   --red-accent: #b83232;
   --white:      #ffffff;
   --border:     #d6c9b3;
-  --shadow:     rgba(26,18,8,0.12);
-
+  --shadow:     rgba(26, 18, 8, 0.12);
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
-
   --radius: 4px;
   --radius-lg: 10px;
   --transition: 0.2s ease;
 }
 
 /* --- Reset --- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* --- Base --- */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-body);
@@ -42,7 +48,9 @@ body {
   flex-direction: column;
 }
 
-main { flex: 1; }
+main {
+  flex: 1;
+}
 
 /* --- Header --- */
 .site-header {
@@ -134,7 +142,7 @@ main { flex: 1; }
   font-weight: 300;
 }
 
-/* Hero decorative elements */
+/* --- Hero Decorative --- */
 .hero-deco {
   position: absolute;
   right: 5%;
@@ -147,18 +155,22 @@ main { flex: 1; }
 .deco-ring {
   position: absolute;
   border-radius: 50%;
-  border: 1.5px solid rgba(200,146,42,0.2);
+  border: 2px solid rgba(200, 146, 42, 0.2);
 }
 
 .ring-1 {
-  width: 200px; height: 200px;
-  top: -100px; right: -50px;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  right: -50px;
 }
 
 .ring-2 {
-  width: 320px; height: 320px;
-  top: -160px; right: -130px;
-  border-color: rgba(200,146,42,0.1);
+  width: 320px;
+  height: 320px;
+  top: -160px;
+  right: -130px;
+  border-color: rgba(200, 146, 42, 0.1);
 }
 
 .deco-star {
@@ -166,7 +178,7 @@ main { flex: 1; }
   top: -60px;
   right: 20px;
   font-size: 6rem;
-  color: rgba(200,146,42,0.15);
+  color: rgba(200, 146, 42, 0.15);
   line-height: 1;
 }
 
@@ -189,9 +201,8 @@ main { flex: 1; }
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--ink);
-  padding: 0;
+  padding: 0 0 0.6rem 0;
   margin-bottom: 1.25rem;
-  padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--gold);
   width: 100%;
   display: block;
@@ -236,7 +247,7 @@ textarea,
 select {
   width: 100%;
   padding: 0.7rem 0.9rem;
-  border: 1.5px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -253,7 +264,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(200,146,42,0.18);
+  box-shadow: 0 0 0 3px rgba(200, 146, 42, 0.18);
 }
 
 input[type="text"]::placeholder,
@@ -266,7 +277,7 @@ textarea {
   min-height: 120px;
 }
 
-/* --- Select wrapper --- */
+/* --- Select Wrapper --- */
 .select-wrap {
   position: relative;
 }
@@ -323,7 +334,9 @@ textarea {
   border-radius: 2px;
 }
 
-.star-label:hover { transform: scale(1.15); }
+.star-label:hover {
+  transform: scale(1.15);
+}
 
 .rating-labels {
   display: flex;
@@ -352,7 +365,7 @@ textarea {
   width: 18px;
   height: 18px;
   min-width: 18px;
-  border: 1.5px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: 3px;
   cursor: pointer;
   appearance: none;
@@ -368,9 +381,12 @@ textarea {
 }
 
 .check-item input[type="checkbox"]:checked::after {
-  content: "✓";
+  content: "\2713";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: grid;
   place-items: center;
   color: var(--ink);
@@ -425,7 +441,7 @@ textarea {
   background: var(--gold);
   color: var(--ink);
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(200,146,42,0.3);
+  box-shadow: 0 6px 18px rgba(200, 146, 42, 0.3);
 }
 
 .btn-submit:focus-visible {
@@ -539,7 +555,10 @@ textarea {
   transition: background var(--transition);
 }
 
-.btn-primary:hover { background: var(--gold); color: var(--ink); }
+.btn-primary:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
 
 .btn-secondary {
   background: transparent;
@@ -549,21 +568,26 @@ textarea {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
-  border: 1.5px solid var(--border);
+  border: 1px solid var(--border);
   transition: border-color var(--transition);
 }
 
-.btn-secondary:hover { border-color: var(--ink); }
+.btn-secondary:hover {
+  border-color: var(--ink);
+}
 
-/* Confimation decorative stars */
+/* --- Confirmation Decorative Stars --- */
 .confirm-deco {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   pointer-events: none;
   overflow: hidden;
 }
 
-.deco-star {
+.confirm-deco .deco-star {
   position: absolute;
   color: var(--gold);
   opacity: 0.1;
@@ -571,9 +595,23 @@ textarea {
   line-height: 1;
 }
 
-.deco-star.big  { font-size: 18rem; bottom: -4rem; right: -3rem; }
-.deco-star.med  { font-size: 8rem;  top: 2rem;     left: 1rem; }
-.deco-star.sm   { font-size: 4rem;  top: 30%;      right: 8%; }
+.confirm-deco .deco-star.big {
+  font-size: 18rem;
+  bottom: -4rem;
+  right: -3rem;
+}
+
+.confirm-deco .deco-star.med {
+  font-size: 8rem;
+  top: 2rem;
+  left: 1rem;
+}
+
+.confirm-deco .deco-star.sm {
+  font-size: 4rem;
+  top: 30%;
+  right: 8%;
+}
 
 /* --- Footer --- */
 .site-footer {
@@ -606,36 +644,83 @@ textarea {
   transition: opacity var(--transition);
 }
 
-.footer-nav a:hover { opacity: 1; }
+.footer-nav a:hover {
+  opacity: 1;
+}
 
 /* --- Utility --- */
 .sr-only {
   position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
 
-/* --- Responsive --- */
+/* --- Media Queries --- */
 @media (max-width: 600px) {
-  .hero { padding: 2.5rem 1.25rem 2.5rem; }
-  .hero-deco { display: none; }
-  .form-container { padding: 2rem 1.25rem 3rem; }
-  .field-legend { font-size: 1.1rem; }
-  .star-label { font-size: 2rem; }
-  .checkbox-grid { grid-template-columns: 1fr 1fr; }
-  .form-footer { flex-direction: column-reverse; align-items: stretch; }
-  .btn-submit { text-align: center; width: 100%; }
-  .confirmation-card { padding: 2rem 1.5rem; }
-  .confirm-title { font-size: 1.8rem; }
-  .counter-value { font-size: 3rem; }
-  .confirm-deco .big { font-size: 12rem; }
-  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .hero {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero-deco {
+    display: none;
+  }
+
+  .form-container {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .field-legend {
+    font-size: 1.1rem;
+  }
+
+  .star-label {
+    font-size: 2rem;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-footer {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .btn-submit {
+    text-align: center;
+    width: 100%;
+  }
+
+  .confirmation-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .confirm-title {
+    font-size: 1.8rem;
+  }
+
+  .counter-value {
+    font-size: 3rem;
+  }
+
+  .confirm-deco .deco-star.big {
+    font-size: 12rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .hero-deco { right: 2%; }
+  .hero-deco {
+    right: 2%;
+  }
 }

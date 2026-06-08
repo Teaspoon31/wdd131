@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Share your product experience with a detailed review to help others make informed decisions." />
-  <meta name="author" content="Joe Boat">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share your product experience with a detailed review to help others make informed decisions.">
+  <meta name="author" content="Boat Joe">
   <title>Product Review | ReviewHub</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -25,20 +25,20 @@
     <section class="hero">
       <div class="hero-content">
         <p class="hero-eyebrow">Share Your Experience</p>
-        <h1 class="hero-title">Product<br/><em>Review</em></h1>
+        <h1 class="hero-title">Product <em>Review</em></h1>
         <p class="hero-sub">Your honest feedback shapes decisions. Take a moment to tell us what you think.</p>
       </div>
       <div class="hero-deco" aria-hidden="true">
         <div class="deco-ring ring-1"></div>
         <div class="deco-ring ring-2"></div>
-        <div class="deco-star">★</div>
+        <div class="deco-star">&#9733;</div>
       </div>
     </section>
 
     <div class="form-container">
-      <form method="get" action="review.html" id="reviewForm" novalidate>
+      <form method="get" action="review.html" id="reviewForm">
 
-        <!-- Product Name -->
+        <!-- Product Name & Date -->
         <fieldset class="field-group">
           <legend class="field-legend">Product Details</legend>
 
@@ -50,48 +50,47 @@
               <select id="productName" name="productName" required aria-required="true">
                 <option value="" disabled selected>Select a Product ...</option>
               </select>
-              <span class="select-arrow" aria-hidden="true">▾</span>
+              <span class="select-arrow" aria-hidden="true">&#9662;</span>
             </div>
           </div>
 
-          <!-- Date of Installation -->
           <div class="field">
             <label for="installDate" class="field-label">
               Date of Installation <span class="required-mark" aria-label="required">*</span>
             </label>
-            <input type="date" id="installDate" name="installDate" required aria-required="true" />
+            <input type="date" id="installDate" name="installDate" required aria-required="true">
           </div>
         </fieldset>
 
         <!-- Overall Rating -->
-        <fieldset class="field-group rating-group" id="ratingFieldset">
+        <fieldset class="field-group rating-group">
           <legend class="field-legend">
             Overall Rating <span class="required-mark" aria-label="required">*</span>
           </legend>
           <p class="field-hint">How would you rate this product overall?</p>
-          <div class="star-rating" role="group" aria-labelledby="ratingFieldset">
-            <input type="radio" id="star5" name="rating" value="5" required aria-required="true" />
-            <label for="star5" class="star-label" title="5 stars – Outstanding">
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" required aria-required="true">
+            <label for="star5" class="star-label" title="5 stars - Outstanding">
               <span class="star-icon">&#9733;</span>
               <span class="sr-only">5 stars</span>
             </label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4" class="star-label" title="4 stars – Great">
+            <input type="radio" id="star4" name="rating" value="4" required aria-required="true">
+            <label for="star4" class="star-label" title="4 stars - Great">
               <span class="star-icon">&#9733;</span>
               <span class="sr-only">4 stars</span>
             </label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3" class="star-label" title="3 stars – Good">
+            <input type="radio" id="star3" name="rating" value="3" required aria-required="true">
+            <label for="star3" class="star-label" title="3 stars - Good">
               <span class="star-icon">&#9733;</span>
               <span class="sr-only">3 stars</span>
             </label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2" class="star-label" title="2 stars – Fair">
+            <input type="radio" id="star2" name="rating" value="2" required aria-required="true">
+            <label for="star2" class="star-label" title="2 stars - Fair">
               <span class="star-icon">&#9733;</span>
               <span class="sr-only">2 stars</span>
             </label>
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1" class="star-label" title="1 star – Poor">
+            <input type="radio" id="star1" name="rating" value="1" required aria-required="true">
+            <label for="star1" class="star-label" title="1 star - Poor">
               <span class="star-icon">&#9733;</span>
               <span class="sr-only">1 star</span>
             </label>
@@ -108,33 +107,33 @@
           <p class="field-hint">Select all features you found useful (optional).</p>
           <div class="checkbox-grid">
             <div class="check-item">
-              <input type="checkbox" id="feat_easy" name="features" value="Easy Installation" />
+              <input type="checkbox" id="feat_easy" name="features" value="Easy Installation">
               <label for="feat_easy">Easy Installation</label>
             </div>
             <div class="check-item">
-              <input type="checkbox" id="feat_durable" name="features" value="Durability" />
+              <input type="checkbox" id="feat_durable" name="features" value="Durability">
               <label for="feat_durable">Durability</label>
             </div>
             <div class="check-item">
-              <input type="checkbox" id="feat_value" name="features" value="Value for Money" />
+              <input type="checkbox" id="feat_value" name="features" value="Value for Money">
               <label for="feat_value">Value for Money</label>
             </div>
             <div class="check-item">
-              <input type="checkbox" id="feat_design" name="features" value="Design & Aesthetics" />
+              <input type="checkbox" id="feat_design" name="features" value="Design and Aesthetics">
               <label for="feat_design">Design &amp; Aesthetics</label>
             </div>
             <div class="check-item">
-              <input type="checkbox" id="feat_support" name="features" value="Customer Support" />
+              <input type="checkbox" id="feat_support" name="features" value="Customer Support">
               <label for="feat_support">Customer Support</label>
             </div>
             <div class="check-item">
-              <input type="checkbox" id="feat_perf" name="features" value="Performance" />
+              <input type="checkbox" id="feat_perf" name="features" value="Performance">
               <label for="feat_perf">Performance</label>
             </div>
           </div>
         </fieldset>
 
-        <!-- Written Review -->
+        <!-- Written Review & Name -->
         <fieldset class="field-group">
           <legend class="field-legend">Your Review</legend>
           <div class="field">
@@ -143,13 +142,13 @@
           </div>
           <div class="field">
             <label for="userName" class="field-label">Your Name <span class="optional-mark">(optional)</span></label>
-            <input type="text" id="userName" name="userName" placeholder="e.g. Jamie S." autocomplete="name" />
+            <input type="text" id="userName" name="userName" placeholder="e.g. Jamie S." autocomplete="name">
           </div>
         </fieldset>
 
         <div class="form-footer">
           <p class="required-note"><span class="required-mark">*</span> Required fields</p>
-          <input type="submit" value="Submit Review →" class="btn-submit" />
+          <input type="submit" value="Submit Review" class="btn-submit">
         </div>
       </form>
     </div>
@@ -166,7 +165,7 @@
     </div>
   </footer>
 
-  <script src="js/products.js"></script>
-  <script src="js/form.js"></script>
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/form.js" defer></script>
 </body>
 </html>
