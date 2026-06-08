@@ -1,1 +1,13 @@
-const products = [ { id: "fc-1888", name: "Flux Capacitor" }, { id: "fc-2050", name: "Power Laces" }, { id: "fs-1987", name: "Time Circuits" }, { id: "ac-2000", name: "Low Voltage Reactor" }, { id: "jj-1969", name: "Warp Equalizer" } ]; const productSelect = document.querySelector("#productName"); if (productSelect) { products.forEach(product => { const option = document.createElement("option"); option.value = product.id; option.textContent = product.name; productSelect.appendChild(option); }); }
+// Product data array - source of truth for select options
+const products = [
+  { id: "PRD001", name: "SolarEdge Home Battery 48V" },
+  { id: "PRD002", name: "Enphase IQ8 Microinverter" },
+  { id: "PRD003", name: "Tesla Powerwall 3" },
+  { id: "PRD004", name: "SunPower Maxeon 6 Panel" },
+  { id: "PRD005", name: "Generac PWRcell M6" },
+  { id: "PRD006", name: "LG NeON R 400W Panel" },
+  { id: "PRD007", name: "Fronius Primo 10kW Inverter" },
+  { id: "PRD008", name: "Victron MultiPlus-II 48V" },
+  { id: "PRD009", name: "EcoFlow Delta Pro Ultra" },
+  { id: "PRD010", name: "BYD Battery-Box Premium LVS" },
+];
