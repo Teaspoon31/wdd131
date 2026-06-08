@@ -8,7 +8,7 @@
     <title>Product Review Form</title>
 
     <meta name="description"
-        content="Submit a product review by selecting a product, rating it, identifying useful features, and providing optional feedback.">
+        content="Submit a product review by selecting a product, rating its quality, identifying useful features, and providing optional feedback.">
 
     <meta name="author" content="Joe Boat">
 
@@ -27,6 +27,7 @@
 <main>
     <form method="get" action="review.html">
 
+        <!-- Product Name -->
         <div class="form-group">
             <label for="productName">
                 Product Name *
@@ -39,25 +40,27 @@
             </select>
         </div>
 
+        <!-- Rating -->
         <fieldset>
             <legend>Overall Rating *</legend>
 
             <input type="radio" id="rating1" name="rating" value="1" required>
-            <label for="rating1">☆</label>
+            <label for="rating1">1 Star</label><br>
 
             <input type="radio" id="rating2" name="rating" value="2" required>
-            <label for="rating2">☆☆</label>
+            <label for="rating2">2 Stars</label><br>
 
             <input type="radio" id="rating3" name="rating" value="3" required>
-            <label for="rating3">☆☆☆</label>
+            <label for="rating3">3 Stars</label><br>
 
             <input type="radio" id="rating4" name="rating" value="4" required>
-            <label for="rating4">☆☆☆☆</label>
+            <label for="rating4">4 Stars</label><br>
 
             <input type="radio" id="rating5" name="rating" value="5" required>
-            <label for="rating5">☆☆☆☆☆</label>
+            <label for="rating5">5 Stars</label>
         </fieldset>
 
+        <!-- Date -->
         <div class="form-group">
             <label for="installDate">
                 Date of Installation *
@@ -70,22 +73,40 @@
                 required>
         </div>
 
+        <!-- Features -->
         <fieldset>
             <legend>Useful Features</legend>
 
-            <input type="checkbox" id="durability" name="features" value="Durability">
+            <input
+                type="checkbox"
+                id="durability"
+                name="features"
+                value="Durability">
             <label for="durability">Durability</label><br>
 
-            <input type="checkbox" id="performance" name="features" value="Performance">
+            <input
+                type="checkbox"
+                id="performance"
+                name="features"
+                value="Performance">
             <label for="performance">Performance</label><br>
 
-            <input type="checkbox" id="design" name="features" value="Design">
+            <input
+                type="checkbox"
+                id="design"
+                name="features"
+                value="Design">
             <label for="design">Design</label><br>
 
-            <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+            <input
+                type="checkbox"
+                id="easeOfUse"
+                name="features"
+                value="Ease of Use">
             <label for="easeOfUse">Ease of Use</label>
         </fieldset>
 
+        <!-- Review -->
         <div class="form-group">
             <label for="review">
                 Written Review
@@ -97,6 +118,7 @@
                 rows="5"></textarea>
         </div>
 
+        <!-- Username -->
         <div class="form-group">
             <label for="username">
                 User Name
@@ -108,8 +130,11 @@
                 name="username">
         </div>
 
+        <!-- Submit -->
         <div class="form-group">
-            <input type="submit" value="Submit Review">
+            <input
+                type="submit"
+                value="Submit Review">
         </div>
 
     </form>
