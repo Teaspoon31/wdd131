@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="FreshCart Local - fresh groceries and local farm produce with curbside pickup.">
-<title>FreshCart Local</title>
+<meta name="description" content="FreshCart Local is a neighborhood grocery store in Springfield offering fresh produce, baked goods, and meat from local farms, with easy curbside pickup ordering online.">
+<title>FreshCart Local - Fresh Groceries &amp; Curbside Pickup</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,7 +17,7 @@
 <header>
   <h1>FreshCart Local</h1>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" aria-current="page">Home</a>
     <a href="flyer.html">Weekly Deals</a>
     <a href="order.html">Order</a>
     <a href="contact.html">Contact</a>
@@ -26,23 +28,49 @@
 
 <section class="hero">
   <h2>Fresh Food From Local Farms</h2>
-  <p>Shop weekly groceries and place curbside pickup orders online.</p>
+  <p>FreshCart Local has been serving the Springfield community since 2014. We partner with family-owned farms within fifty miles to bring you produce, bakery items, and meat that are picked, baked, and packed within a day of arriving on our shelves. Browse this week's deals, build your order online, and pick it up curbside without ever leaving your car.</p>
 </section>
 
 <section class="grid">
-  <div class="card">🥦 Produce</div>
-  <div class="card">🥖 Bakery</div>
-  <div class="card">🥩 Meat</div>
+  <article class="card">
+    <h3>🥦 Produce</h3>
+    <p>Seasonal fruits and vegetables harvested from local farms, restocked six days a week to guarantee peak freshness.</p>
+  </article>
+  <article class="card">
+    <h3>🥖 Bakery</h3>
+    <p>Breads, rolls, and pastries baked fresh in-store every morning using traditional recipes and simple ingredients.</p>
+  </article>
+  <article class="card">
+    <h3>🥩 Meat</h3>
+    <p>Hormone-free beef, pork, and poultry sourced from regional ranchers and cut fresh by our in-house butchers.</p>
+  </article>
 </section>
 
-<img src="https://images.unsplash.com/photo-1542838132-92c53300491e"
-     alt="Fresh groceries"
-     loading="lazy">
+<section class="info">
+  <div class="info-block">
+    <h3>Store Hours</h3>
+    <p>Monday – Saturday: 7:00 AM – 9:00 PM</p>
+    <p>Sunday: 8:00 AM – 6:00 PM</p>
+  </div>
+  <div class="info-block">
+    <h3>Location</h3>
+    <p>482 Maple Street<br>Springfield, OR 97477</p>
+    <p>Curbside pickup spots are located along the west side of the building, clearly marked with green signage.</p>
+  </div>
+</section>
+
+<figure class="hero-image">
+  <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=60"
+       alt="Crates of fresh vegetables and fruit on display at FreshCart Local"
+       width="800" height="533"
+       loading="lazy">
+  <figcaption>Fresh produce restocked daily from local farms.</figcaption>
+</figure>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 FreshCart Local</p>
+  <p>&copy; 2026 FreshCart Local. All rights reserved.</p>
   <a href="references.html">References</a>
 </footer>
 

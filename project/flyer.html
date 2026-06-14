@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="This week's deals on fresh produce, bakery, and dairy at FreshCart Local.">
+<meta name="description" content="See this week's grocery deals at FreshCart Local, including discounts on local produce, bakery items, and dairy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <title>Weekly Deals - FreshCart Local</title>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,18 +17,28 @@
   <h1>Weekly Deals</h1>
   <nav>
     <a href="index.html">Home</a>
-    <a href="flyer.html">Deals</a>
+    <a href="flyer.html" aria-current="page">Weekly Deals</a>
     <a href="order.html">Order</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
-  <section id="dealList"></section>
+
+<section class="hero">
+  <h2>This Week's Specials</h2>
+  <p>Our flyer refreshes every Monday with the best prices on seasonal produce, fresh-baked goods, and pantry staples. Items marked as a Hot Deal are limited to in-store and curbside stock and may sell out before the week is over, so add them to your order early.</p>
+</section>
+
+<section class="panel">
+  <h2>Current Deals</h2>
+  <section id="dealList" aria-live="polite"></section>
+</section>
+
 </main>
 
 <footer>
-  <p>&copy; 2026 FreshCart Local</p>
+  <p>&copy; 2026 FreshCart Local. All rights reserved.</p>
   <a href="references.html">References</a>
 </footer>
 
