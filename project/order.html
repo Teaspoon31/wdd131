@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pickup Order</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Curbside Pickup Order</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flyer.html">Deals</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="panel">
+  <h2>Add Item to Order</h2>
+
+  <form id="orderForm">
+    <input type="text" id="item" placeholder="Item name" required>
+
+```
+<select id="category">
+  <option>Produce</option>
+  <option>Bakery</option>
+  <option>Meat</option>
+  <option>Dairy</option>
+</select>
+
+<button type="submit">Add Item</button>
+```
+
+  </form>
+</section>
+
+<section class="panel">
+  <h2>Your Order</h2>
+  <ul id="orderList"></ul>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 FreshCart Local</p>
+  <a href="references.html">References</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
