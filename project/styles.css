@@ -5,6 +5,10 @@ body {
   color: #263238;
 }
 
+h1, h2, h3 {
+  font-family: Poppins, sans-serif;
+}
+
 header {
   background: #2E7D32;
   color: white;
@@ -48,6 +52,25 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: -6px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+#contactMessage {
+  font-weight: 600;
+  color: #2E7D32;
 }
 
 button {
